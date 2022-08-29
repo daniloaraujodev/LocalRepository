@@ -1,0 +1,378 @@
+@font-face{ 
+    /*Caso a fonte esteja dentro de uma pasta*/
+    font-family: Quicksand;
+     src: url("/fonts/Quicksand_Bold.otf");
+}
+@font-face{ 
+    /*Caso a fonte esteja dentro de uma pasta*/
+    font-family: helvetica-light;
+     src: url("/fonts/helvetica-light-condensed.otf");
+}
+/* CSS DO TOPO*/
+
+.center {
+  /*border: 5px outset red;*/
+  background-color: #F0FFFF;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+/* CSS DA BARRA DE MENU*/
+
+.barra {
+  /*border: 5px outset red;*/
+  background-color: navy;
+  text-align: center;
+  width: 100%;
+  height: 22px;
+  display: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 170px 170px 190px 170px 170px  170px  170px;
+  background-color: #000080;
+  font-size: 12px;
+  font-family: Open Sans, sans-serif, Quicksand;
+  color:  white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* CSS DAS REDES SOCIAIS*/
+
+.parent {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 5px;
+grid-row-gap: 0px;
+padding-left: 10px;
+}
+
+.logo { 
+  grid-area: 1 / 1 / 2 / 4; 
+  padding-bottom: 10px;
+  background-color: white;
+}
+.instagram { 
+  grid-area: 1 / 6 / 2 / 7; 
+  padding-top: 20px;
+  background-color: white;
+  text-align: right;
+  height: 10px;
+  width: 40px;
+}
+.facebook { 
+  grid-area: 1 / 7 / 2 / 8; 
+  padding-top: 20px;
+  background-color: white;
+  text-align: center;
+  height: 10px;
+  width: 40px;
+}
+.whatsapp { 
+  grid-area: 1 / 8 / 2 / 9;
+  padding-top: 20px; 
+  background-color: white;
+  text-align: left;
+  height: 10px;
+  width: 40px;
+}
+.contato { 
+  grid-area: 1 / 4 / 2 / 6; 
+  padding-top: 30px;
+  background-color: white;
+  text-align: left;
+  height: 10px;
+  width: 40px;
+}
+
+/* CSS DO SLIDE DE IMAGENS*/
+
+.carrocel {
+  /*border: 5px outset red;*/
+  background-color: NONE;
+  text-align: center;
+  width: 840px;
+  height: 450px;
+  display: center;
+  margin: auto;
+}
+
+/*CONFIGURAÇÃO DO SLIDE CARROCEL DE FOTOS*/
+
+.galery {
+  padding-top: 20px;
+    width: 840px;
+    height: 450px;
+    overflow: hidden;
+}
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.galery .fotos img {
+    width: 19.9%;
+}
+.main { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+/* CSS DA GRADE DAS CATEGORIAS*/
+
+.grade {
+  background-color: none;
+  text-align: center;
+  width: 1200px;
+  height: 800px;
+  display: center;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.tipos {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 100px;
+grid-row-gap: 80px;
+padding-top: 40px;
+padding: 20px;
+}
+
+.grid1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+  height: 200px;
+  width: 200px;
+  border: 5px outset #ADD8E6;
+  border-radius: 25px;
+  grid-column-gap: 15px;
+  grid-row-gap: 40px;
+  }
+
+.grid2 { 
+  grid-area: 1 / 2 / 2 / 3; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid3 { 
+  grid-area: 1 / 3 / 2 / 4; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid4 { 
+  grid-area: 1 / 4 / 2 / 5; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid5 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid6 { 
+  grid-area: 2 / 2 / 3 / 3; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid7 { 
+  grid-area: 2 / 3 / 3 / 4; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid8 { 
+  grid-area: 2 / 4 / 3 / 5; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid9 { 
+  grid-area: 3 / 1 / 4 / 2; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid10 { 
+  grid-area: 3 / 2 / 4 / 3; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid11 { 
+  grid-area: 3 / 3 / 4 / 4; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+.grid12 { 
+  grid-area: 3 / 4 / 4 / 5; 
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 5px outset #ADD8E6;
+  }
+
+  /* CSS DO FOOTER*/
+
+.footer {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 410px;
+  background-color: #F0FFFF;
+  border-radius: 15px;
+    
+}
+
+.foot1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+  width: 232px;
+  height: 290px;
+
+  padding-bottom: 40px;
+  text-align: center;
+  margin: auto;
+  }
+
+.foot2 { 
+  grid-area: 1 / 2 / 2 / 3; 
+  width: 232px;
+  height: 290px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: auto;
+
+  }
+
+.foot3 { 
+  grid-area: 1 / 3 / 2 / 4; 
+  width: 232px;
+  height: 290px;
+
+  padding-bottom: 40px;
+  text-align: center;
+  margin: auto;  
+  }
+
+.foot4 { 
+  grid-area: 1 / 4 / 3 /5 ; 
+  width: 232px;
+  height: 290px;
+
+  padding-bottom: 40px;
+  text-align: center;
+  margin: auto;
+  }
+
+.grade-footer {
+  padding-top: 40px;
+
+
+  }
+
+.footer-msg {
+  display: grid;
+  grid-column-gap: 40px;
+  padding-top: 20px;
+ }
+
+.text-cat{
+  PADDING: 20px;
+  font-family: Open Sans, sans-serif, Quicksand;
+  font-size: 14px;
+  font-weight: bold;
+  color: navy;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+/* CSS DO RODAPÉ*/
+
+.barra-rodape {
+  /*border: 5px outset red;*/
+  background-color: none;
+  margin: auto;
+  width: 100%;
+  height: 22px;
+  display: center;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+
+.rodape {
+  font-size: 12px;
+  font-family: Open Sans, sans-serif, Quicksand;
+  color:  navy;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*CSS DE EFEITO DE TEXTO E CURSOR*/
+
+a:hover {
+  color:#fff; 
+    -moz-box-shadow:0 3px 10px 0 #CCC; 
+    -webkit-box-shadow:0 3px 10px 0 #ccc; 
+    text-shadow:0px 0px 5px #fff;
+
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+body{
+  background-color: #E6E6FA;
+}
+
+.produtos-fabricados{
+  text-align: center;
+  color: navy;
+  font-weight: boldx;
+  font-family: Open Sans, sans-serif, Quicksand;
+  font-size: 30px;
+  padding-top: 100px;
+}
+
+.foot1-text{
+  text-align: center;
+  color: navy;
+  font-family: Open Sans, sans-serif, Quicksand;
+  font-size: 13px;
+
+}
+
+img {
+  border-radius: 20px;
+
+}
+
